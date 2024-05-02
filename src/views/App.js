@@ -80,7 +80,7 @@ class App extends React.Component {
       alert("Por favor, seleccione un departamento.");
     } else {
       try {
-        const response = await fetch(`http://127.0.0.1:7790/empleados/departamento`);
+        const response = await fetch(`http://127.0.0.1:7791/empleados/departamento`);
         const data = await response.json(); // Convertir la respuesta a JSON
         data.forEach((obj, index) => {
           console.log(`Objeto ${index + 1}:`);
@@ -104,7 +104,7 @@ class App extends React.Component {
       alert("Por favor, ingrese la cédula completa (9 dígitos).");
     } else {
       try {
-        const response = await fetch(`http://127.0.0.1:7790/empleados/cedula`);
+        const response = await fetch(`http://127.0.0.1:7791/empleados/cedula`);
         const data = await response.json(); // Convertir la respuesta a JSON
         data.forEach((obj, index) => {
           console.log(`Objeto ${index + 1}:`);
@@ -126,7 +126,7 @@ class App extends React.Component {
   handleConsultarPlanilla = async () => {
     console.log('planilla');
     try {
-      const response = await fetch(`http://127.0.0.1:7790/empleados/planilla`);
+      const response = await fetch(`http://127.0.0.1:7791/empleados/planilla`);
       const data = await response.json(); // Convertir la respuesta a JSON
       data.forEach((obj, index) => {
         console.log(`Objeto ${index + 1}:`);
@@ -152,7 +152,7 @@ class App extends React.Component {
       alert("Por favor, seleccione la quincena.");
     } else {
       try {
-        const response = await fetch(`http://127.0.0.1:7790/empleados/quincena`);
+        const response = await fetch(`http://127.0.0.1:7791/empleados/quincena`);
         const data = await response.json(); // Convertir la respuesta a JSON
         data.forEach((obj, index) => {
           console.log(`Objeto ${index + 1}:`);
